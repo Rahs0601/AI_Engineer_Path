@@ -22,6 +22,8 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
     *   [4.1 Neural Networks](#41-neural-networks)
     *   [4.2 Convolutional Neural Networks (CNNs)](#42-convolutional-neural-networks-cnns)
     *   [4.3 Recurrent Neural Networks (RNNs)](#43-recurrent-neural-networks-rnns)
+    *   [4.4 Attention and Transformers](#44-attention-and-transformers)
+    *   [4.5 Generative Models](#45-generative-models)
 *   [5. Reinforcement Learning](#5-reinforcement-learning)
 *   [6. Large Language Models (LLMs)](#6-large-language-models-llms)
 
@@ -109,6 +111,16 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
 [README.md](4_Deep_Learning/3_Recurrent_Neural_Networks_RNNs/README.md)
 *   [Concepts](4_Deep_Learning/3_Recurrent_Neural_Networks_RNNs/rnns_concepts.md)
 *   [Examples](4_Deep_Learning/3_Recurrent_Neural_Networks_RNNs/rnns_examples.md)
+
+### 4.4 Attention and Transformers
+[README.md](4_Deep_Learning/4_Attention_and_Transformers/README.md)
+*   [Concepts](4_Deep_Learning/4_Attention_and_Transformers/attention_transformers_concepts.md)
+*   [Examples](4_Deep_Learning/4_Attention_and_Transformers/attention_transformers_examples.py)
+
+### 4.5 Generative Models
+[README.md](4_Deep_Learning/5_Generative_Models/README.md)
+*   [Concepts](4_Deep_Learning/5_Generative_Models/generative_models_concepts.md)
+*   [Examples](4_Deep_Learning/5_Generative_Models/generative_models_examples.py)
 
 ---
 

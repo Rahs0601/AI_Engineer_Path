@@ -32,8 +32,9 @@ Unsupervised learning is a type of machine learning where the model learns from 
 *   **Principal Component Analysis (PCA)**: A linear dimensionality reduction technique that transforms the data into a new coordinate system where the greatest variance by some projection comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.
     *   **Principal Components**: New orthogonal (uncorrelated) variables that capture the most variance in the data.
     *   **Eigenvalues and Eigenvectors**: PCA relies heavily on these concepts from linear algebra.
-*   **t-SNE (t-Distributed Stochastic Neighbor Embedding)**: A non-linear dimensionality reduction technique particularly well-suited for visualizing high-dimensional datasets.
-*   **Autoencoders**: Neural networks used for unsupervised learning of efficient data codings (representations). They learn to compress the input into a lower-dimensional representation and then reconstruct it.
+*   **t-SNE (t-Distributed Stochastic Neighbor Embedding)**: A non-linear dimensionality reduction technique particularly well-suited for visualizing high-dimensional datasets by mapping them to a lower-dimensional space (e.g., 2D or 3D) while preserving the local structure of the data.
+*   **Autoencoders**: Neural networks used for unsupervised learning of efficient data codings (representations). They learn to compress the input into a lower-dimensional representation and then reconstruct it, aiming to minimize the reconstruction error.
+*   **Independent Component Analysis (ICA)**: A computational method that separates a multivariate signal into additive subcomponents assuming the subcomponents are non-Gaussian and statistically independent from each other. It is often used for blind source separation, such as separating individual voices from a mixture of sounds.
 
 ## Resources:
 

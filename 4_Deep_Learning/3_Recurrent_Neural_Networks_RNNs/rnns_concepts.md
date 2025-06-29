@@ -50,6 +50,52 @@ RNNs can be configured in various ways depending on the input and output sequenc
 *   **Time Series Analysis**: Stock price prediction, weather forecasting.
 *   **Video Analysis**: Activity recognition.
 
+## GRU (Gated Recurrent Unit)
+
+The Gated Recurrent Unit (GRU) is a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. It is similar to the Long Short-Term Memory (LSTM) but has fewer parameters, as it lacks an output gate. GRUs are often used in sequence-to-sequence models and are known for their computational efficiency while often achieving comparable performance to LSTMs.
+
+### Key Components of a GRU:
+
+*   **Update Gate (z_t)**: This gate determines how much of the past information (from the previous hidden state) needs to be passed along to the future. It acts as a combination of the forget and input gates of an LSTM.
+    *   `z_t = sigmoid(W_z * [h_{t-1}, x_t] + b_z)`
+*   **Reset Gate (r_t)**: This gate determines how much of the past information to forget. It controls how much of the previous hidden state is relevant to the current input.
+    *   `r_t = sigmoid(W_r * [h_{t-1}, x_t] + b_r)`
+*   **Candidate Hidden State (h_tilde_t)**: This is a new memory content that is computed based on the current input and the past hidden state, with the reset gate applied to the past hidden state.
+    *   `h_tilde_t = tanh(W_h * [r_t * h_{t-1}, x_t] + b_h)`
+*   **Current Hidden State (h_t)**: The final hidden state at the current time step is a linear interpolation between the previous hidden state and the candidate hidden state, controlled by the update gate.
+    *   `h_t = (1 - z_t) * h_{t-1} + z_t * h_tilde_t`
+
+### Advantages of GRUs:
+
+*   **Simplicity**: GRUs are simpler than LSTMs, having fewer gates and parameters, which can lead to faster training times.
+*   **Efficiency**: Due to fewer parameters, GRUs are computationally less expensive.
+*   **Performance**: Despite their simplicity, GRUs often perform comparably to LSTMs on various tasks, especially with smaller datasets.
+*   **Vanishing Gradient Solution**: Like LSTMs, GRUs effectively address the vanishing gradient problem, allowing them to learn long-term dependencies.
+
+### Disadvantages of GRUs:
+
+*   **Less Expressive**: In some complex tasks, LSTMs might outperform GRUs due to their more complex gating mechanism and separate cell state.
+
+### Applications:
+
+GRUs are widely used in:
+
+*   **Natural Language Processing**: Machine translation, speech recognition, text summarization.
+*   **Time Series Prediction**: Financial forecasting, weather prediction.
+*   **Sequence Modeling**: Any task involving sequential data where long-term dependencies are crucial.
+
+## Resources:
+
+*   **"Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville**
+*   **Andrew Ng's Deep Learning Specialization (Coursera)**
+*   **TensorFlow/Keras Documentation**
+*   **Colah's Blog: Understanding LSTMs (highly recommended visual explanation)**
+
+
+*   **Natural Language Processing (NLP)**: Machine translation, sentiment analysis, text generation, speech recognition, named entity recognition.
+*   **Time Series Analysis**: Stock price prediction, weather forecasting.
+*   **Video Analysis**: Activity recognition.
+
 ## Resources:
 
 *   **"Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville**

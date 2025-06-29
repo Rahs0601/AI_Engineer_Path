@@ -37,20 +37,23 @@ Supervised learning is a type of machine learning where the model learns from a 
     *   **Multiple Linear Regression**: Multiple independent variables.
     *   **Assumptions**: Linearity, independence of errors, homoscedasticity, normality of residuals.
 *   **Polynomial Regression**: Models non-linear relationships by fitting a polynomial equation.
-*   **Decision Tree Regressor**: Uses a tree-like model of decisions and their possible consequences.
-*   **Random Forest Regressor**: Ensemble method that builds multiple decision trees and averages their predictions.
-*   **Support Vector Regression (SVR)**: An extension of Support Vector Machines for regression tasks.
+*   **Decision Tree Regressor**: Uses a tree-like model of decisions and their possible consequences, splitting data based on features to predict a continuous output.
+*   **Random Forest Regressor**: An ensemble method that builds multiple decision trees during training and outputs the mean prediction of the individual trees. It helps to reduce overfitting and improve accuracy.
+*   **Support Vector Regression (SVR)**: An extension of Support Vector Machines for regression tasks. It finds a hyperplane that best fits the data points, allowing for a certain margin of error (epsilon) and penalizing errors outside this margin.
 
 #### B. Classification Algorithms
 
 *   **Logistic Regression**: Despite its name, it's a classification algorithm. It models the probability of a binary outcome using a logistic function.
     *   **Binary Classification**: Two classes.
     *   **Multinomial Logistic Regression**: More than two classes.
-*   **K-Nearest Neighbors (KNN)**: Classifies a data point based on the majority class among its `k` nearest neighbors in the feature space.
-*   **Decision Tree Classifier**: Similar to the regressor, but for classification. Splits data based on features to classify.
-*   **Random Forest Classifier**: Ensemble method using multiple decision trees to improve accuracy and reduce overfitting.
-*   **Support Vector Machine (SVM)**: Finds the optimal hyperplane that best separates data points into different classes.
-*   **Naive Bayes**: A family of probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.
+*   **K-Nearest Neighbors (KNN)**: A non-parametric, instance-based learning algorithm that classifies a data point based on the majority class among its `k` nearest neighbors in the feature space.
+*   **Decision Tree Classifier**: Similar to the regressor, but for classification. It constructs a tree-like model of decisions and their possible consequences, splitting data based on features to classify into discrete categories.
+*   **Random Forest Classifier**: An ensemble method that uses multiple decision trees to improve accuracy and reduce overfitting. It works by building a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.
+*   **Support Vector Machine (SVM)**: A powerful algorithm that finds the optimal hyperplane that best separates data points into different classes by maximizing the margin between the classes. It can handle both linear and non-linear classification using kernel tricks.
+*   **Naive Bayes**: A family of probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features. It is simple, fast, and often performs well on text classification and spam detection.
+    *   **Gaussian Naive Bayes**: Assumes features follow a Gaussian distribution.
+    *   **Multinomial Naive Bayes**: Suitable for discrete counts, often used in text classification.
+    *   **Bernoulli Naive Bayes**: Suitable for binary/boolean features.
 
 ### 5. Loss Functions (Cost Functions)
 
