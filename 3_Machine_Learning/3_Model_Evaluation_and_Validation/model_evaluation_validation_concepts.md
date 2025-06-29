@@ -59,3 +59,22 @@ Model evaluation and validation are crucial steps in the machine learning workfl
 *   **Scikit-learn Documentation**: Model evaluation metrics and cross-validation.
 *   **"Applied Predictive Modeling" by Max Kuhn and Kjell Johnson**
 *   **Online courses on Machine Learning Evaluation**
+
+### 7. Loss Functions
+
+Loss functions (also known as cost functions or objective functions) quantify the error between the predicted output of a model and the true output. The goal of training a machine learning model is to minimize this loss function.
+
+#### A. Regression Loss Functions
+
+*   **Mean Squared Error (MSE)**: `(1/n) * Σ(y_true - y_pred)^2`. The average of the squared differences between predictions and actual values. Penalizes larger errors more heavily. Used for regression tasks.
+*   **Mean Absolute Error (MAE)**: `(1/n) * Σ|y_true - y_pred|`. The average of the absolute differences between predictions and actual values. Less sensitive to outliers than MSE. Used for regression tasks.
+*   **Huber Loss (Smooth Mean Absolute Error)**: A combination of MSE and MAE. It is quadratic for small errors and linear for large errors, making it less sensitive to outliers than MSE while still providing a smooth gradient.
+*   **Log-Cosh Loss**: A smoother version of MAE. It is the logarithm of the hyperbolic cosine of the error. It behaves like MSE for small errors and like MAE for large errors, offering robustness to outliers while being differentiable everywhere.
+
+#### B. Classification Loss Functions
+
+*   **Binary Cross-Entropy (Log Loss)**: Used for binary classification problems (two classes). It measures the performance of a classification model whose output is a probability value between 0 and 1. It increases as the predicted probability diverges from the actual label.
+    *   `L = - (y_true * log(y_pred) + (1 - y_true) * log(1 - y_pred))`
+*   **Categorical Cross-Entropy**: Used for multi-class classification problems where the labels are one-hot encoded (e.g., `[0, 1, 0]` for class 1). It measures the performance of a classification model whose output is a probability distribution over multiple classes.
+*   **Sparse Categorical Cross-Entropy**: Similar to Categorical Cross-Entropy, but used when the labels are integers (e.g., `1` for class 1) instead of one-hot encoded. It internally converts integer labels to one-hot vectors.
+*   **Kullback-Leibler (KL) Divergence Loss**: Measures the difference between two probability distributions. In generative models (like VAEs), it's often used to regularize the latent space distribution to be close to a prior distribution (e.g., a standard normal distribution).

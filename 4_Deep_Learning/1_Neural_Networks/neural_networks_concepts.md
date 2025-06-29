@@ -52,10 +52,32 @@ Neural Networks (NNs), also known as Artificial Neural Networks (ANNs), are the 
 
 ### 8. Optimizers
 
-*   Algorithms used to adjust the weights and biases of the neural network during training to minimize the loss function.
-*   **Gradient Descent**: The basic optimizer, where weights are updated in the direction opposite to the gradient of the loss function.
-*   **Stochastic Gradient Descent (SGD)**: Updates weights using the gradient of a single training example or a small batch of examples.
-*   **Adam (Adaptive Moment Estimation)**: A popular and efficient optimizer that combines ideas from RMSprop and Adagrad.
+Optimizers are algorithms or methods used to change the attributes of your neural network, such as weights and learning rate, in order to reduce the losses. They are crucial for efficient training of deep learning models.
+
+*   **Gradient Descent (GD)**: The most basic optimization algorithm. It updates the model parameters (weights and biases) in the direction opposite to the gradient of the loss function with respect to the parameters. It computes the gradient using the entire training dataset, which can be slow for large datasets.
+
+*   **Stochastic Gradient Descent (SGD)**: Instead of computing the gradient using the entire dataset, SGD updates the parameters using the gradient of a single randomly chosen training example at each step. This makes it much faster than GD, but the updates are noisy, leading to oscillations.
+
+*   **Mini-Batch Gradient Descent**: A compromise between GD and SGD. It updates parameters using the gradient of a small batch of training examples (typically 32, 64, 128, or 256). This reduces the noise of SGD while still being computationally more efficient than GD.
+
+*   **Momentum**: An extension to SGD that helps accelerate convergence, especially in directions of consistent gradient and dampens oscillations in irrelevant directions. It adds a fraction of the update vector of the past time step to the current update vector.
+
+*   **Adagrad (Adaptive Gradient Algorithm)**: Adapts the learning rate to the parameters, performing smaller updates for parameters associated with frequently occurring features and larger updates for parameters associated with infrequent features. It accumulates the square of past gradients.
+
+*   **RMSprop (Root Mean Square Propagation)**: An unpublished, adaptive learning rate optimization algorithm proposed by Geoff Hinton. It tries to resolve Adagrad's radically diminishing learning rates by using a moving average of squared gradients.
+
+*   **Adam (Adaptive Moment Estimation)**: One of the most popular and effective optimizers. It combines the advantages of both Adagrad and RMSprop. It computes adaptive learning rates for each parameter and also incorporates momentum.
+    *   **Adamax**: A variant of Adam based on the infinity norm.
+    *   **Nadam (Nesterov-accelerated Adaptive Moment Estimation)**: Adam with Nesterov momentum.
+
+*   **Adadelta**: An extension of Adagrad that seeks to reduce its aggressive, monotonically decreasing learning rate. It does not require setting a default learning rate and is robust to different model architectures.
+
+*   **Learning Rate Schedules**: Techniques to adjust the learning rate during training. Common schedules include:
+    *   **Step Decay**: Reduce learning rate by a factor every few epochs.
+    *   **Exponential Decay**: Learning rate decays exponentially over time.
+    *   **Cosine Annealing**: Learning rate follows a cosine curve, starting high and decreasing to a minimum.
+
+*   **Early Stopping**: A form of regularization used to avoid overfitting when training a learner with an iterative method, such as gradient descent. It stops the training process when the performance on a validation dataset starts to degrade.
 
 ### 9. Hyperparameters
 
