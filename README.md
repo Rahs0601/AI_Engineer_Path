@@ -26,6 +26,7 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
     *   [4.5 Generative Models](#45-generative-models)
 *   [5. Reinforcement Learning](#5-reinforcement-learning)
 *   [6. Large Language Models (LLMs)](#6-large-language-models-llms)
+*   [7. Time Series Analysis](#7-time-series-analysis)
 
 ---
 
@@ -134,3 +135,10 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
 ## 6. Large Language Models (LLMs)
 [README.md](6_Large_Language_Models_LLMs/README.md)
 *   [Concepts](6_Large_Language_Models_LLMs/llms_concepts.md)
+
+---
+
+## 7. Time Series Analysis
+[README.md](7_Time_Series_Analysis/README.md)
+*   [Concepts](7_Time_Series_Analysis/time_series_concepts.md)
+*   [Examples](7_Time_Series_Analysis/time_series_examples.py)
