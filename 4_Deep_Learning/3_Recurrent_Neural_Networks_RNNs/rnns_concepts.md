@@ -90,15 +90,3 @@ GRUs are widely used in:
 *   **Andrew Ng's Deep Learning Specialization (Coursera)**
 *   **TensorFlow/Keras Documentation**
 *   **Colah's Blog: Understanding LSTMs (highly recommended visual explanation)**
-
-
-*   **Natural Language Processing (NLP)**: Machine translation, sentiment analysis, text generation, speech recognition, named entity recognition.
-*   **Time Series Analysis**: Stock price prediction, weather forecasting.
-*   **Video Analysis**: Activity recognition.
-
-## Resources:
-
-*   **"Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville**
-*   **Andrew Ng's Deep Learning Specialization (Coursera)**
-*   **TensorFlow/Keras Documentation**
-*   **Colah's Blog: Understanding LSTMs (highly recommended visual explanation)**

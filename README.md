@@ -71,6 +71,7 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
 ### 2.5 Docker
 [README.md](2_Programming_and_Tools/5_docker/README.md)
 *   [Concepts](2_Programming_and_Tools/5_docker/docker_concepts.md)
+*   [Cheat Sheet](2_Programming_and_Tools/5_Programming_and_Tools/5_docker/docker_cheatsheet.md)
 *   [Examples](2_Programming_and_Tools/5_docker/docker_examples.py)
 
 ---
@@ -107,6 +108,7 @@ Welcome to the AI Engineer Path! This repository is designed to guide you throug
 [README.md](4_Deep_Learning/2_Convolutional_Neural_Networks_CNNs/README.md)
 *   [Concepts](4_Deep_Learning/2_Convolutional_Neural_Networks_CNNs/cnns_concepts.md)
 *   [Examples](4_Deep_Learning/2_Convolutional_Neural_Networks_CNNs/cnns_examples.md)
+*   [Variants](4_Deep_Learning/2_Convolutional_Neural_Networks_CNNs/cnn_variants.md)
 
 ### 4.3 Recurrent Neural Networks (RNNs)
 [README.md](4_Deep_Learning/3_Recurrent_Neural_Networks_RNNs/README.md)
